@@ -1,0 +1,58 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".References.ElectricalFormulas.ElectricalFormulasFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/formula_label"
+        android:layout_weight=".1"
+        android:textColor="@android:color/white"
+        android:background="@android:color/holo_blue_dark"
+        android:textAlignment="gravity"
+        android:gravity="center_vertical|center_horizontal" />
+
+    <ImageSwitcher
+        android:id="@+id/formula_image"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scaleType="fitCenter"  />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="16dp" />
+
+    <LinearLayout
+        style="?android:attr/buttonBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:measureWithLargestChild="true"
+        android:orientation="horizontal"
+        android:layout_weight=".1">
+
+        <Button
+            android:id="@+id/previous"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Previous"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/next"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Next"
+            android:textAlignment="center" />
+    </LinearLayout>
+
+</LinearLayout>

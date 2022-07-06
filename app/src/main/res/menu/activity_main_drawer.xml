@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item android:title="Tools">
+
+            <menu>
+                <item
+                    android:title="Ohm's Law"
+                    android:icon="@drawable/ic_menu_electricity"
+                    android:id="@+id/nav_ohms_law"
+                    />
+                <item
+                    android:title="Power Factor"
+                    android:icon="@drawable/ic_menu_triangle"
+                    android:id="@+id/nav_power_factor"
+                    />
+                <item
+                    android:title="Minimum Approach Distance (MAD)"
+                    android:icon="@drawable/ic_menu_ruler"
+                    android:id="@+id/nav_minimum_approach_distance"
+                    />
+                <item
+                    android:title="Electrical Unit Conversions"
+                    android:icon="@drawable/ic_menu_convert"
+                    android:id="@+id/nav_electrical_unit_conversions"
+                    />
+                <item
+                    android:title="Rigging and Lifting"
+                    android:icon="@drawable/ic_menu_weight"
+                    android:id="@+id/nav_rigging"
+                    />
+            </menu>
+
+        </item>
+
+        <item android:title="References">
+
+            <menu>
+                <item
+                    android:title="Electrical Formulas"
+                    android:icon="@drawable/ic_menu_list"
+                    android:id="@+id/nav_electrical_formulas"
+                    />
+                <item
+                    android:title="Stored Equations"
+                    android:icon="@drawable/ic_menu_list"
+                    android:id="@+id/nav_saved_equations"
+                    />
+                <item
+                    android:title="References"
+                    android:icon="@drawable/ic_menu_list"
+                    android:id="@+id/nav_references"
+                    />
+            </menu>
+
+        </item>
+
+    </group>
+
+</menu>

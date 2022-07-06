@@ -1,0 +1,99 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.seth.electricaltoolsandsafety.ElectricalFormulasFragment">
+
+    <group android:checkableBehavior="single">
+
+        <item android:title="Formulas"
+            android:id="@+id/nav_to_formulas"
+            android:icon="@drawable/settings_icon"
+            android:orderInCategory="1"
+            app:showAsAction="ifRoom" >
+
+            <menu>
+
+                <item
+                    android:title="DC Series"
+                    android:id="@+id/dc_series"
+                    android:orderInCategory="2"
+                    app:showAsAction="never" />
+
+                <item
+                    android:title="DC Parallel"
+                    android:id="@+id/dc_parallel"
+                    android:orderInCategory="3"
+                    app:showAsAction="never" />
+
+                <item
+                    android:title="AC Series Capacitive "
+                    android:id="@+id/ac_series_capacitive"
+                    android:orderInCategory="4"
+                    app:showAsAction="never" />
+
+                <item
+                    android:title="AC Series Inductive"
+                    android:id="@+id/ac_series_inductive"
+                    android:orderInCategory="5"
+                    app:showAsAction="never" />
+
+                <item
+                    android:title="AC Series Combined"
+                    android:id="@+id/ac_series_combined"
+                    android:orderInCategory="6"
+                    app:showAsAction="never" />
+
+                <item
+                    android:title="AC Parallel Capacitive "
+                    android:id="@+id/ac_parallel_capacitive"
+                    android:orderInCategory="7"
+                    app:showAsAction="never" />
+
+                <item
+                    android:title="AC Parallel Inductive"
+                    android:id="@+id/ac_parallel_inductive"
+                    android:orderInCategory="8"
+                    app:showAsAction="never" />
+
+                <item
+                    android:title="AC Parallel Combined"
+                    android:id="@+id/ac_parallel_combined"
+                    android:orderInCategory="9"
+                    app:showAsAction="never" />
+
+                <item
+                    android:title="Capacitors"
+                    android:id="@+id/capacitors"
+                    android:orderInCategory="10"
+                    app:showAsAction="never" />
+
+                <item
+                    android:title="Inductors"
+                    android:id="@+id/inductors"
+                    android:orderInCategory="11"
+                    app:showAsAction="never" />
+
+                <item
+                    android:title="Power Factor"
+                    android:id="@+id/power_factor"
+                    android:orderInCategory="12"
+                    app:showAsAction="never" />
+
+                <item
+                    android:title="AC Values"
+                    android:id="@+id/ac_values"
+                    android:orderInCategory="13"
+                    app:showAsAction="never" />
+
+                <item
+                    android:title="Ohm's Law"
+                    android:id="@+id/ohms_law"
+                    android:orderInCategory="14"
+                    app:showAsAction="never" />
+            </menu>
+
+        </item>
+
+    </group>
+
+</menu>

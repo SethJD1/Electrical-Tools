@@ -1,0 +1,326 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Tools.PowerFactor.PowerFactorFragment"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4">
+
+        <ViewSwitcher
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/view_switcher"
+            android:layout_weight="1">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="5">
+
+                    <Button
+                        android:id="@+id/var_button_large"
+                        android:text="VAR"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".5"
+                        android:textColor="@android:color/black"
+                        android:textSize="30sp"
+                        android:textStyle="bold"
+                        android:backgroundTint="@android:color/holo_blue_light"/>
+
+                    <Button
+                        android:id="@+id/va_button_large"
+                        android:text="VA"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".5"
+                        android:textColor="@android:color/black"
+                        android:textSize="30sp"
+                        android:textStyle="bold"
+                        android:backgroundTint="@android:color/holo_orange_dark"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="5">
+
+                    <Button
+                        android:id="@+id/watts_button_large"
+                        android:text="Watts"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textColor="@android:color/black"
+                        android:textSize="30sp"
+                        android:textStyle="bold"
+                        android:backgroundTint="@android:color/holo_green_dark"/>
+
+                    <Button
+                        android:id="@+id/angle_button_large"
+                        android:text="Angle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textColor="@android:color/black"
+                        android:textSize="30sp"
+                        android:textStyle="bold"
+                        android:backgroundTint="#FEF62F"/>
+                </TableRow>
+
+            </TableLayout>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".2">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="200dp"
+                        android:id="@+id/power_factor_image"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/power_factor_triangle_blank"
+                        android:cropToPadding="false"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="false" />
+                </TableRow>
+
+                <!-- Divider -->
+                <View android:layout_width="match_parent"
+                    android:layout_height="10px"
+                    android:background="#A7A7A7"/>
+
+                <!-- Spacer -->
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".3">
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.25">
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text="VAR"
+                        android:id="@+id/var_button_small"
+                        android:background="@android:color/holo_blue_light"
+                        android:layout_weight="1"
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp" />
+
+                    <Space
+                        android:layout_width="20px"
+                        android:layout_height="20px" />
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text="VA"
+                        android:id="@+id/va_button_small"
+                        android:background="@android:color/holo_orange_dark"
+                        android:layout_weight="1"
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp" />
+
+                    <Space
+                        android:layout_width="20px"
+                        android:layout_height="20px" />
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text="Watts"
+                        android:id="@+id/watts_button_small"
+                        android:background="@android:color/holo_green_dark"
+                        android:layout_weight="1"
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp" />
+
+                    <Space
+                        android:layout_width="20px"
+                        android:layout_height="20px" />
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text="Angle"
+                        android:id="@+id/angle_button_small"
+                        android:background="#FEF62F"
+                        android:layout_weight="1"
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp" />
+                </TableRow>
+
+            </TableLayout>
+
+        </ViewSwitcher>
+
+    </TableRow>
+
+    <!-- Spacer -->
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".75">
+    </TableRow>
+
+    <!-- Divider -->
+    <View android:layout_width="match_parent"
+        android:layout_height="10px"
+        android:background="#A7A7A7"/>
+
+    <!-- Spacer -->
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".2">
+    </TableRow>
+
+    <!-- Top Power Factor Quantity -->
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <Spinner
+            android:id="@+id/unit_one"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".3"
+            style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+            android:spinnerMode="dropdown" />
+
+        <Spinner
+            android:id="@+id/quantity_one"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".3"
+            style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+            android:spinnerMode="dropdown" />
+
+        <TextView
+            android:id="@+id/equal_one"
+            android:text="="
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".1"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textAlignment="gravity"
+            android:gravity="center" />
+
+        <EditText
+            android:id="@+id/value_one"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".3"
+            android:inputType="numberDecimal"
+            android:textAlignment="center"
+            android:ems="10"/>
+    </TableRow>
+
+    <!-- Bottom Power Factor Quantity -->
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <Spinner
+            android:id="@+id/unit_two"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".3"
+            style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+            android:spinnerMode="dropdown" />
+
+        <Spinner
+            android:id="@+id/quantity_two"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".3"
+            style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+            android:spinnerMode="dropdown" />
+
+        <TextView
+            android:id="@+id/equal_two"
+            android:text="="
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".1"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textAlignment="gravity"
+            android:gravity="center" />
+
+        <EditText
+            android:id="@+id/value_two"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".3"
+            android:inputType="numberDecimal"
+            android:textAlignment="center"
+            android:ems="10" />
+    </TableRow>
+
+    <!-- Answer -->
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <Spinner
+            android:id="@+id/unit_answer"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".5"
+            style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+            android:spinnerMode="dropdown" />
+
+        <TextView
+            android:id="@+id/equal_three"
+            android:text="="
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".1"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textAlignment="gravity"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/answer"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".5"
+            android:inputType="numberDecimal"
+            android:textAlignment="gravity"
+            android:textSize="17sp"
+            android:textColor="@android:color/white"
+            android:gravity="center_vertical|center_horizontal"
+            android:textStyle="bold"
+            android:background="@drawable/underline_light_grey"/>
+    </TableRow>
+
+</TableLayout>
+
+
+

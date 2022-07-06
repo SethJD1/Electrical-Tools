@@ -1,0 +1,210 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Tools.MAD.MADFragment">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Spacer -->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".1">
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.25">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".05">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".30">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Elevation"
+                    android:textColor="@android:color/white"
+                    android:id="@+id/elevation_label"
+                    android:layout_weight=".5"
+                    android:textAlignment="gravity"
+                    android:gravity="center_vertical" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Kilovolts"
+                    android:textColor="@android:color/white"
+                    android:id="@+id/kilovolts_label"
+                    android:layout_weight=".5"
+                    android:gravity="center_vertical"
+                    android:textAlignment="gravity" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".4">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:inputType="number"
+                    android:ems="10"
+                    android:id="@+id/elevation_answer"
+                    android:layout_weight=".5"
+                    android:textAlignment="center" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:inputType="numberDecimal"
+                    android:ems="10"
+                    android:id="@+id/kilovolts_answer"
+                    android:layout_weight=".5"
+                    android:textAlignment="center" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".05">
+
+            </LinearLayout>
+
+        </TableRow>
+
+        <!-- Spacer -->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".5">
+        </TableRow>
+
+        <!-- Divider -->
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_rectangle_green">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Phase-To-Ground Exposure"
+                    android:textColor="@android:color/white"
+                    android:id="@+id/phase_to_ground_label"
+                    android:layout_column="0"
+                    android:layout_weight="1"
+                    android:textAlignment="gravity"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:layout_span="2"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text=""
+                    android:textColor="@android:color/white"
+                    android:textSize="30sp"
+                    android:id="@+id/phase_to_ground_answer"
+                    android:layout_column="0"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:textAlignment="gravity"
+                    android:layout_weight="1"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".25">
+        </TableRow>
+
+
+        <!-- Divider -->
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical|center_horizontal"
+            android:background="@drawable/rounded_rectangle_blue"
+            android:textAlignment="gravity">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Phase-To-Phase Exposure"
+                    android:textColor="@android:color/white"
+                    android:id="@+id/phase_to_phase_label"
+                    android:layout_column="0"
+                    android:layout_weight="1"
+                    android:textAlignment="gravity"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text=""
+                    android:textColor="@android:color/white"
+                    android:textSize="30sp"
+                    android:id="@+id/phase_to_phase_answer"
+                    android:layout_column="0"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:textAlignment="gravity"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </TableRow>
+
+    </TableLayout>
+
+</FrameLayout>

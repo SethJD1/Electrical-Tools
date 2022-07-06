@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4c4c4c</color>
+    <color name="colorPrimaryDark">#191919</color>
+    <color name="colorAccent">#8ac355</color>
+    <color name="colorDefaultDarkText">#000000</color>
+    <color name="colorActionText">#f10100</color>
+    <color name="colorDefaultLightText">#FFFFFF</color>
+    <color name="greyBackground">#303030</color>
+    <color name="action_items_light">#FFFFFF</color>
+</resources>
