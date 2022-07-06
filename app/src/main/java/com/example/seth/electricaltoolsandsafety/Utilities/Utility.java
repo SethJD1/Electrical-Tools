@@ -1,11 +1,10 @@
 package com.example.seth.electricaltoolsandsafety.Utilities;
 
 import android.content.Context;
-import android.util.Log;
 import android.view.MenuItem;
-import android.support.annotation.ColorRes;
+import androidx.annotation.ColorRes;
 import android.graphics.drawable.Drawable;
-import android.support.v4.graphics.drawable.DrawableCompat;
+import androidx.core.graphics.drawable.DrawableCompat;
 import java.util.Date;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;

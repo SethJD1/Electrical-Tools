@@ -3,7 +3,7 @@ package com.example.seth.electricaltoolsandsafety.References.ElectricalFormulas;
 import com.example.seth.electricaltoolsandsafety.R;
 
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
+import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
